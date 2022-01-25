@@ -1,0 +1,9 @@
+.pixools-tab-button {
+  border-bottom: red 2px solid;
+}
+.pixools-tab-button.is-selected {
+  border-bottom: green 2px solid;
+}
+.is-hidden {
+  display: none;
+}
