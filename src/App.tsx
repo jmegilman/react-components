@@ -1,11 +1,11 @@
 import './App.css';
-import TabsExample from './components/Pixools/Tabs/TabsExample';
+import ExampleUseAsync from './ReactExamples/useAsyncExample'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TabsExample />
+        <ExampleUseAsync />
       </header>
     </div>
   );
