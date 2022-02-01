@@ -40,4 +40,6 @@ export const counterSlice = createSlice({
 
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
+export const getCountState = (state) => state.counter;
+
 export default counterSlice.reducer;

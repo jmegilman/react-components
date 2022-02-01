@@ -4,10 +4,11 @@ import {
   incrementAsync,
   decrement,
   incrementByAmount,
+  getCountState,
 } from "./counterSlice";
 
 const Counter = () => {
-  const count = useSelector((state) => state.counter);
+  const count = useSelector(getCountState);
   const { status, value } = count;
   const dispatch = useDispatch();
 
