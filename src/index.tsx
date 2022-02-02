@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import About from './routes/About'
+// import ReduxApp from './ReactExamples/redux';
+import TabsExample from './components/Pixools/Tabs/TabsExample';
 import Home from './routes/Home'
 import NotFound from './routes/NotFound'
 import Invoices from './ReactExamples/reactRouter/Invoices'
 import Invoice from './ReactExamples/reactRouter/Invoice'
+import Users from './ReactExamples/redux/features/users'
+import User from './ReactExamples/redux/features/users/User'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -16,7 +19,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/tabs" element={<TabsExample />} />
           <Route path="/invoices" element={<Invoices />}>
             <Route
               index
@@ -27,6 +30,10 @@ ReactDOM.render(
               }
             />
             <Route path=":invoiceId" element={<Invoice />} />
+          </Route>
+          <Route path="/users">
+            <Route path="all" element={<Users />} />
+            <Route path=":userId" element={<User />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>

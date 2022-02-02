@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>React Playground</h1>
         <nav>
           <Link to="/home" style={{ display: "inline-block", margin: "0 0 0 1rem" }}>Home</Link>
-          <Link to="/about" style={{ display: "inline-block", margin: "0 0 0 1rem" }}>About</Link>
+          <Link to="/tabs" style={{ display: "inline-block", margin: "0 0 0 1rem" }}>Tabs</Link>
           <Link to="/invoices" style={{ display: "inline-block", margin: "0 0 0 1rem" }}>Invoices</Link>
         </nav>
         <Outlet />
